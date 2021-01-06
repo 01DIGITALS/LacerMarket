@@ -1,3 +1,3 @@
-class Content < ApplicationRecord
+class Content < ActiveRecord::Base
     belongs_to :user
 end
