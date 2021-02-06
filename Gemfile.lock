@@ -74,6 +74,16 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.1.0.0)
       execjs
+    aws-eventstream (1.1.0)
+    aws-sdk (2.11.632)
+      aws-sdk-resources (= 2.11.632)
+    aws-sdk-core (2.11.632)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.11.632)
+      aws-sdk-core (= 2.11.632)
+    aws-sigv4 (1.2.2)
+      aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.16)
     bindex (0.8.1)
     bootsnap (1.5.1)
@@ -113,6 +123,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
+    jmespath (1.4.0)
     loofah (2.8.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -252,6 +263,7 @@ PLATFORMS
 
 DEPENDENCIES
   aasm
+  aws-sdk (~> 2.3)
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
